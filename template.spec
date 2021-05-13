@@ -1,3 +1,5 @@
+%define debug_package %{nil}
+
 Summary: {{SUMMARY}}
 Name: {{PACKAGE}}
 Version: {{VERSION}}
@@ -10,6 +12,7 @@ Vendor: {{VENDOR}}
 Source: tmp.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 BuildArch: {{ARCH}}
+AutoReqProv: no
 
 %description
 {{DESC}}
